@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Premium artificial flowers and lasting floral arrangements in Kenya.">
+    <title>EverBloom Artificial Flowers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top">🌿 Beautiful flowers. Lasting forever. <span>Free delivery on selected orders</span></div>
+    <header><a class="brand" href="#home">EverBloom <small>ARTIFICIAL FLOWERS</small></a><button id="menuBtn"
+            class="menu" aria-label="Menu">☰</button>
+        <nav id="nav"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#categories">Categories</a><a
+                href="#about">About</a><a href="#contact">Contact</a></nav><button class="cartBtn" id="openCart">🛒 <b
+                id="cartCount">0</b></button>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <div class="heroText">
+                <p class="eyebrow">PREMIUM ARTIFICIAL FLOWERS</p>
+                <h1>Timeless Beauty<br><em>for Every Space</em></h1>
+                <p>Realistic, elegant artificial flowers for homes, offices, gifts and events. No watering. No wilting.
+                    Just lasting beauty.</p><a class="btn" href="#shop">Shop Collection →</a>
+                <div class="perks"><span>✿ Realistic Look</span><span>◇ Long Lasting</span><span>⌂ Home & Events</span>
+                </div>
+            </div>
+            <div class="heroImage"><img src="assets/hero-artificial.png" alt="Premium artificial flower arrangement">
+            </div>
+        </section>
+        <section id="categories" class="section">
+            <p class="eyebrow center">SHOP BY CATEGORY</p>
+            <h2>Flowers That Stay Beautiful</h2>
+            <div id="categoryGrid" class="categories"></div>
+        </section>
+        <section id="shop" class="section shop">
+            <div class="sectionHead">
+                <div>
+                    <p class="eyebrow">OUR COLLECTION</p>
+                    <h2>Featured Artificial Flowers</h2>
+                </div><input id="search" placeholder="Search flowers..." aria-label="Search products">
+            </div>
+            <div id="filters" class="filters"></div>
+            <div id="products" class="products"></div>
+        </section>
+        <section id="about" class="about">
+            <div>
+                <p class="eyebrow">WHY ARTIFICIAL?</p>
+                <h2>Beauty without the maintenance.</h2>
+                <p>Style your space with lifelike blooms designed to stay fresh-looking season after season. Ideal for
+                    reception desks, living rooms, restaurants, churches, weddings and thoughtful gifts.</p>
+            </div>
+            <div class="benefits">
+                <div><b>365</b><span>days of beauty</span></div>
+                <div><b>0</b><span>watering needed</span></div>
+                <div><b>∞</b><span>styling possibilities</span></div>
+            </div>
+        </section>
+        <section class="custom">
+            <h2>Need a custom arrangement?</h2>
+            <p>Tell us your preferred colours, budget and occasion. We can prepare a custom artificial floral
+                arrangement for you.</p><a class="btn" id="quoteLink" href="#">Request on WhatsApp</a>
+        </section>
+    </main>
+    <footer id="contact">
+        <div>
+            <h3>EverBloom</h3>
+            <p>Artificial flowers for beautiful spaces.</p>
+        </div>
+        <div><b>Contact</b>
+            <p>Phone: +254 700 000 000<br>Email: hello@everbloom.co.ke<br>Kenya</p>
+        </div>
+        <div><b>Opening Hours</b>
+            <p>Mon–Sat: 8:00 AM–6:00 PM<br>Sunday: By arrangement</p>
+        </div>
+        <div><b>Quick Links</b>
+            <p><a href="#shop">Shop</a><br><a href="#about">About</a><br><a href="#contact">Contact</a></p>
+        </div>
+    </footer>
+    <div class="copyright">© <span id="year"></span> EverBloom Artificial Flowers. All rights reserved.</div>
+    <nav class="mobileDock" aria-label="Mobile quick navigation"><a href="#home">⌂<span>Home</span></a><a
+            href="#categories">✿<span>Categories</span></a><a href="#shop">⌕<span>Shop</span></a><button id="dockCart"
+            type="button">🛒<span>Cart</span><b id="dockCount">0</b></button></nav>
+    <div id="overlay" class="overlay"></div>
+    <aside id="cart" class="cart">
+        <div class="cartHead">
+            <h2>Your Cart</h2><button id="closeCart">✕</button>
+        </div>
+        <div id="cartItems" class="cartItems"></div>
+        <div class="cartFoot">
+            <div><span>Subtotal</span><strong id="subtotal">KSh 0</strong></div><button id="checkout"
+                class="btn full">Checkout via WhatsApp</button><button id="clearCart" class="clear">Clear cart</button>
+        </div>
+    </aside><a id="floatingWA" class="floating" href="#" aria-label="WhatsApp">☏</a>
+    <div id="toast" class="toast"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

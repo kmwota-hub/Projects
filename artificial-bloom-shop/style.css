@@ -1,0 +1,1057 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap");
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 74px;
+}
+body {
+  margin: 0;
+  color: #173d33;
+  font-family: "DM Sans", Arial, sans-serif;
+  background: #fffdfa;
+  padding-bottom: 72px;
+}
+button,
+input {
+  font: inherit;
+}
+a {
+  color: inherit;
+}
+.top {
+  background: #123d32;
+  color: #fff;
+  padding: 7px 5%;
+  font-size: 10px;
+  text-align: center;
+}
+.top span {
+  display: none;
+}
+header {
+  height: 66px;
+  padding: 0 4%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  box-shadow: 0 4px 20px #153a2f12;
+}
+.brand {
+  font:
+    700 20px "Playfair Display",
+    Georgia;
+  color: #123d32;
+  text-decoration: none;
+  line-height: 1;
+}
+.brand small {
+  display: block;
+  font: 7px "DM Sans";
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+.menu,
+.cartBtn {
+  border: 1px solid #dbe8e1;
+  background: #f5faf7;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.menu {
+  margin-left: auto;
+}
+.cartBtn {
+  font-size: 0;
+  position: relative;
+}
+.cartBtn:before {
+  content: "🛒";
+  font-size: 17px;
+}
+.cartBtn b {
+  position: absolute;
+  right: -3px;
+  top: -4px;
+  background: #c84d70;
+  color: #fff;
+  border-radius: 50%;
+  min-width: 18px;
+  height: 18px;
+  padding: 2px;
+  font-size: 9px;
+  display: grid;
+  place-items: center;
+}
+nav#nav {
+  display: none;
+  position: absolute;
+  top: 66px;
+  left: 4%;
+  right: 4%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 18px 28px #0002;
+  flex-direction: column;
+}
+nav#nav.open {
+  display: flex;
+}
+nav#nav a {
+  padding: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid #edf2ef;
+}
+nav#nav a:last-child {
+  border: 0;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(145deg, #fff9f5, #f6eee8);
+  overflow: hidden;
+}
+.heroText {
+  padding: 40px 6% 28px;
+  order: 1;
+}
+.eyebrow {
+  font-size: 9px;
+  letter-spacing: 2.1px;
+  font-weight: 700;
+  color: #377365;
+  margin: 0 0 10px;
+}
+.hero h1 {
+  font:
+    700 39px/1.03 "Playfair Display",
+    Georgia;
+  margin: 8px 0 15px;
+  color: #173d33;
+  letter-spacing: -0.6px;
+}
+.hero h1 em {
+  font-weight: 600;
+  color: #16805e;
+}
+.hero p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #60736d;
+  margin: 0 0 20px;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: #177858;
+  color: #fff;
+  text-decoration: none;
+  padding: 13px 20px;
+  border-radius: 28px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 20px #17785825;
+}
+.perks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-top: 27px;
+}
+.perks span {
+  font-size: 9px;
+  font-weight: 700;
+  text-align: center;
+  background: #ffffff90;
+  border: 1px solid #e6eee9;
+  border-radius: 12px;
+  padding: 10px 5px;
+}
+.heroImage {
+  height: 300px;
+  order: 2;
+  position: relative;
+}
+.heroImage:after {
+  content: "BEAUTIFUL • FOREVER";
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: #173d33b5;
+  padding: 9px 12px;
+  border-radius: 22px;
+}
+.heroImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 64% center;
+}
+.section {
+  padding: 52px 4%;
+}
+.section h2 {
+  text-align: center;
+  font:
+    700 30px/1.1 "Playfair Display",
+    Georgia;
+  margin: 7px auto 10px;
+  max-width: 340px;
+}
+.center {
+  text-align: center;
+}
+.section > .center + h2:after {
+  content: "Designed to look fresh, season after season.";
+  display: block;
+  font: 400 12px/1.5 "DM Sans";
+  color: #72817c;
+  margin-top: 8px;
+}
+.categories {
+  display: flex;
+  gap: 11px;
+  margin: 25px -4vw 0;
+  padding: 0 4vw 8px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.categories::-webkit-scrollbar {
+  display: none;
+}
+.category {
+  flex: 0 0 142px;
+  min-height: 158px;
+  border: 1px solid #e7e5df;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 7px 20px #153a2f0b;
+  scroll-snap-align: start;
+}
+.category:before {
+  content: "";
+  display: block;
+  height: 102px;
+  background-image: url("assets/hero-artificial.png");
+  background-size: 580%;
+  background-position: var(--pos, 60%) 45%;
+}
+.category:nth-child(2):before {
+  --pos: 50%;
+}
+.category:nth-child(3):before {
+  --pos: 42%;
+}
+.category:nth-child(4):before {
+  --pos: 66%;
+}
+.category:nth-child(5):before {
+  --pos: 72%;
+}
+.category:nth-child(6):before {
+  --pos: 35%;
+}
+.category:nth-child(7):before {
+  --pos: 79%;
+}
+.category .emoji {
+  display: none;
+}
+.category b,
+.category small {
+  display: block;
+  padding: 0 10px;
+}
+.category b {
+  margin-top: 9px;
+  font: 600 13px "Playfair Display";
+}
+.category small {
+  font-size: 9px;
+  color: #78857f;
+  margin-top: 2px;
+}
+.shop {
+  background: linear-gradient(180deg, #f8faf8, #fffdfa);
+}
+.sectionHead {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.sectionHead h2 {
+  text-align: left;
+  margin: 4px 0;
+  max-width: none;
+}
+.sectionHead input {
+  width: 100%;
+  padding: 13px 17px;
+  border: 1px solid #d4dfda;
+  border-radius: 25px;
+  background: #fff;
+  outline: none;
+}
+.filters {
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  margin: 18px -4vw;
+  padding: 0 4vw 5px;
+  scrollbar-width: none;
+}
+.filters::-webkit-scrollbar {
+  display: none;
+}
+.filters button {
+  flex: none;
+  border: 1px solid #d4dfda;
+  background: #fff;
+  padding: 8px 13px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+  color: #52665f;
+}
+.filters button.active {
+  background: #177858;
+  color: #fff;
+  border-color: #177858;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.card {
+  background: #fff;
+  border: 1px solid #e5e9e6;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 7px 20px #153a2f0d;
+}
+.productVisual {
+  height: 148px;
+  background-image: url("assets/hero-artificial.png");
+  background-size: 520%;
+  background-position: var(--p, 55%) 45%;
+  position: relative;
+}
+.card:nth-child(4n + 2) .productVisual {
+  --p: 47%;
+}
+.card:nth-child(4n + 3) .productVisual {
+  --p: 64%;
+}
+.card:nth-child(4n + 4) .productVisual {
+  --p: 38%;
+}
+.productVisual:after {
+  content: "PREMIUM";
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  background: #fffddd;
+  color: #28584b;
+  font-size: 6px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  padding: 5px 7px;
+  border-radius: 16px;
+}
+.cardBody {
+  padding: 11px;
+}
+.cardBody small {
+  color: #9b6573;
+  font-weight: 700;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+.card h3 {
+  font: 600 14px/1.25 "Playfair Display";
+  margin: 5px 0 8px;
+  min-height: 35px;
+}
+.price {
+  font-size: 13px;
+  font-weight: 800;
+  color: #177858;
+}
+.card button {
+  width: 100%;
+  margin-top: 10px;
+  border: 0;
+  background: #177858;
+  color: #fff;
+  padding: 10px 5px;
+  border-radius: 22px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+.about {
+  padding: 52px 4%;
+  display: grid;
+  gap: 22px;
+  background: #fff;
+}
+.about > div:first-child {
+  padding: 30px 22px;
+  background: linear-gradient(135deg, #fff5f3, #f7eee9);
+  border-radius: 22px;
+  position: relative;
+  overflow: hidden;
+}
+.about h2,
+.custom h2 {
+  font:
+    700 31px/1.08 "Playfair Display",
+    Georgia;
+  margin: 7px 0 13px;
+}
+.about p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #60726d;
+}
+.benefits {
+  display: grid;
+  gap: 9px;
+}
+.benefits div {
+  background: #f2f7f4;
+  padding: 17px 20px;
+  border-radius: 14px;
+  border: 1px solid #e1ebe6;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.benefits b {
+  font: 700 28px "Playfair Display";
+  min-width: 48px;
+  color: #bd496a;
+}
+.benefits span {
+  font-size: 12px;
+  font-weight: 600;
+}
+.custom {
+  margin: 0 4% 52px;
+  text-align: left;
+  background:
+    linear-gradient(90deg, #153f34e8, #153f34a8),
+    url("assets/hero-artificial.png") center 47% / cover;
+  padding: 43px 7%;
+  border-radius: 22px;
+  color: #fff;
+}
+.custom h2 {
+  font-size: 31px;
+  max-width: 480px;
+}
+.custom p {
+  font-size: 13px;
+  max-width: 550px;
+  line-height: 1.7;
+  color: #e7efeb;
+  margin: 0 0 20px;
+}
+.custom .btn {
+  background: #fff;
+  color: #174a3c;
+  box-shadow: none;
+}
+footer {
+  background: #123d32;
+  color: #fff;
+  display: grid;
+  gap: 22px;
+  padding: 45px 6% 90px;
+}
+footer h3 {
+  font: 700 25px "Playfair Display";
+  margin: 0 0 8px;
+}
+footer b {
+  font-size: 12px;
+}
+footer p {
+  color: #d8e4df;
+  line-height: 1.7;
+  font-size: 11px;
+  margin: 7px 0;
+}
+footer a {
+  text-decoration: none;
+}
+.copyright {
+  background: #0d3027;
+  color: #c8d7d2;
+  text-align: center;
+  padding: 14px 5% 84px;
+  font-size: 9px;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: #0007;
+  z-index: 49;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
+}
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.cart {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  height: min(78vh, 650px);
+  background: #fff;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  transition: 0.28s;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 -12px 35px #0002;
+}
+.cart.open {
+  bottom: 0;
+}
+.cartHead {
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+.cartHead h2 {
+  font: 700 23px "Playfair Display";
+  margin: 0;
+}
+.cartHead button {
+  border: 0;
+  background: #f3f7f5;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+.cartItems {
+  padding: 10px 16px;
+  overflow: auto;
+  flex: 1;
+}
+.cartRow {
+  display: grid;
+  grid-template-columns: 58px 1fr auto;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 12px;
+}
+.cartRow .mini {
+  background: url("assets/hero-artificial.png") 55% 45%/480%;
+  border-radius: 10px;
+}
+.qty {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin-top: 7px;
+}
+.qty button {
+  width: 27px;
+  height: 27px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 50%;
+}
+.remove {
+  border: 0;
+  background: none;
+  color: #a23;
+  cursor: pointer;
+}
+.cartFoot {
+  padding: 16px 18px calc(16px + env(safe-area-inset-bottom));
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+.cartFoot > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+.full {
+  width: 100%;
+}
+.clear {
+  width: 100%;
+  border: 0;
+  background: none;
+  padding: 10px;
+  color: #9b4458;
+  cursor: pointer;
+}
+.floating {
+  position: fixed;
+  right: 15px;
+  bottom: 82px;
+  background: #1aae61;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  font-size: 23px;
+  z-index: 25;
+  box-shadow: 0 8px 25px #0002;
+}
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 86px;
+  transform: translate(-50%, 80px);
+  background: #123d32;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 22px;
+  opacity: 0;
+  transition: 0.2s;
+  z-index: 60;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.toast.show {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+.mobileDock {
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 66px;
+  padding-bottom: env(safe-area-inset-bottom);
+  background: #fff;
+  z-index: 35;
+  border-top: 1px solid #e5ece8;
+  box-shadow: 0 -6px 22px #173d3312;
+}
+.mobileDock a,
+.mobileDock button {
+  position: relative;
+  border: 0;
+  background: none;
+  text-decoration: none;
+  color: #47635a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-size: 18px;
+}
+.mobileDock span {
+  font-size: 9px;
+  font-weight: 700;
+}
+.mobileDock b {
+  position: absolute;
+  top: 5px;
+  right: 24%;
+  background: #c84d70;
+  color: #fff;
+  border-radius: 50%;
+  min-width: 16px;
+  height: 16px;
+  font-size: 8px;
+  display: grid;
+  place-items: center;
+}
+@media (min-width: 700px) {
+  body {
+    padding-bottom: 0;
+  }
+  .top {
+    padding: 8px 6%;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .top span {
+    display: inline;
+  }
+  header {
+    height: 76px;
+    padding: 0 6%;
+    gap: 24px;
+  }
+  .brand {
+    font-size: 26px;
+  }
+  .brand small {
+    font-size: 8px;
+  }
+  .menu {
+    display: none;
+  }
+  nav#nav {
+    display: flex;
+    position: static;
+    box-shadow: none;
+    padding: 0;
+    margin: auto;
+    flex-direction: row;
+    background: none;
+  }
+  nav#nav a {
+    border: 0;
+    padding: 10px;
+    font-size: 13px;
+  }
+  .cartBtn {
+    border-radius: 24px;
+    width: auto;
+    padding: 0 15px;
+    min-width: 48px;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 44% 56%;
+    min-height: 520px;
+  }
+  .heroText {
+    padding: 65px 8% 55px 12%;
+    align-self: center;
+  }
+  .hero h1 {
+    font-size: 48px;
+  }
+  .heroImage {
+    height: auto;
+    min-height: 520px;
+  }
+  .section {
+    padding: 68px 6%;
+  }
+  .section h2 {
+    font-size: 37px;
+    max-width: none;
+  }
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: visible;
+    margin: 30px 0 0;
+    padding: 0;
+  }
+  .category {
+    min-width: 0;
+  }
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+  }
+  .productVisual {
+    height: 220px;
+  }
+  .cardBody {
+    padding: 15px;
+  }
+  .card h3 {
+    font-size: 16px;
+  }
+  .about {
+    padding: 75px 7%;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .custom {
+    margin: 0 6% 70px;
+    padding: 60px 7%;
+  }
+  .custom h2 {
+    font-size: 40px;
+  }
+  footer {
+    grid-template-columns: 2fr repeat(3, 1fr);
+    padding: 52px 7%;
+  }
+  .copyright {
+    padding: 15px;
+  }
+  .mobileDock {
+    display: none;
+  }
+  .floating {
+    bottom: 22px;
+  }
+  .toast {
+    bottom: 25px;
+  }
+  .cart {
+    left: auto;
+    right: -430px;
+    top: 0;
+    bottom: auto;
+    width: min(420px, 94vw);
+    height: 100vh;
+    border-radius: 0;
+    transition: 0.25s;
+  }
+  .cart.open {
+    right: 0;
+    bottom: auto;
+  }
+}
+@media (min-width: 1050px) {
+  .hero {
+    grid-template-columns: 43% 57%;
+    min-height: 590px;
+  }
+  .heroText {
+    padding: 80px 8% 65px 14%;
+  }
+  .hero h1 {
+    font-size: 58px;
+  }
+  .heroImage {
+    min-height: 590px;
+  }
+  .categories {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .products {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .productVisual {
+    height: 240px;
+  }
+  .sectionHead {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+  }
+  .sectionHead input {
+    width: 300px;
+  }
+  .filters {
+    overflow: visible;
+    margin: 25px 0;
+    padding: 0;
+  }
+}
+/* Mobile-first hardening: phone is the base layout; larger screens only enhance it. */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+section[id] {
+  scroll-margin-top: 76px;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  touch-action: manipulation;
+}
+@media (max-width: 699px) {
+  .top {
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 12px;
+    white-space: normal;
+  }
+  header {
+    padding-left: 14px;
+    padding-right: 14px;
+    gap: 7px;
+  }
+  .brand {
+    font-size: 19px;
+    max-width: calc(100vw - 112px);
+    white-space: nowrap;
+  }
+  .hero {
+    min-height: 0;
+  }
+  .heroText {
+    padding: 32px 18px 24px;
+  }
+  .hero h1 {
+    font-size: clamp(34px, 10.5vw, 43px);
+    max-width: 360px;
+  }
+  .heroText > .btn {
+    width: 100%;
+    min-height: 48px;
+  }
+  .heroImage {
+    height: clamp(245px, 76vw, 330px);
+  }
+  .perks {
+    margin-top: 20px;
+    gap: 5px;
+  }
+  .perks span {
+    min-width: 0;
+    padding: 9px 3px;
+    font-size: 8px;
+  }
+  .section {
+    padding: 44px 16px;
+  }
+  .categories {
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .filters {
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .products {
+    gap: 9px;
+  }
+  .productVisual {
+    height: clamp(130px, 42vw, 180px);
+  }
+  .cardBody {
+    padding: 10px 9px 11px;
+  }
+  .card h3 {
+    font-size: 13px;
+    min-height: 33px;
+  }
+  .card button {
+    min-height: 40px;
+    margin-top: 9px;
+  }
+  .about {
+    padding: 44px 16px;
+  }
+  .custom {
+    margin: 0 16px 44px;
+    padding: 36px 22px;
+  }
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .cart {
+    max-height: 88dvh;
+    height: 78dvh;
+  }
+  .cartHead button,
+  .qty button {
+    min-width: 36px;
+    min-height: 36px;
+  }
+  .mobileDock {
+    height: calc(64px + env(safe-area-inset-bottom));
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  body {
+    padding-bottom: calc(64px + env(safe-area-inset-bottom));
+  }
+  .floating {
+    bottom: calc(76px + env(safe-area-inset-bottom));
+  }
+  .toast {
+    bottom: calc(78px + env(safe-area-inset-bottom));
+    max-width: calc(100vw - 32px);
+    white-space: normal;
+    text-align: center;
+  }
+}
+@media (max-width: 359px) {
+  .brand {
+    font-size: 17px;
+  }
+  .brand small {
+    letter-spacing: 1.4px;
+  }
+  .menu,
+  .cartBtn {
+    width: 37px;
+    height: 37px;
+  }
+  .heroText {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .section {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .categories,
+  .filters {
+    margin-left: -12px;
+    margin-right: -12px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .products {
+    gap: 7px;
+  }
+  .cardBody {
+    padding: 9px 7px;
+  }
+  .card h3 {
+    font-size: 12px;
+  }
+  .price {
+    font-size: 12px;
+  }
+  .custom {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
