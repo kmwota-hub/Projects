@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>RoyalScent | Premium Perfumes</title>
+    <meta name="description"
+        content="Premium fragrances for men, women and every signature style. Shop RoyalScent and order via WhatsApp.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header><button class="icon" id="menuBtn">☰</button><a class="logo" href="#"><span>♛</span> RoyalScent<small>PREMIUM
+                PERFUMES</small></a>
+        <div class="head-actions"><button class="icon" id="searchBtn">⌕</button><button class="icon cart-open">🛍️<b
+                    class="badge">0</b></button></div>
+    </header>
+    <nav id="nav"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#categories">Categories</a><a
+            href="#about">About</a><a href="#contact">Contact</a></nav>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow">PREMIUM FRAGRANCES</p>
+                <h1>More Than<br><em>Just a Scent</em></h1>
+                <p>Discover perfumes that match your personality, style and special moments.</p><a class="btn gold"
+                    href="#shop">Shop Now →</a>
+            </div>
+            <div class="bottle"><span>♛</span><strong>ROYALSCENT</strong><small>EAU DE PARFUM</small></div>
+        </section>
+        <section class="benefits">
+            <div>♛<b>Premium Selection</b><small>Curated fragrances</small></div>
+            <div>🚚<b>Reliable Delivery</b><small>Across Kenya</small></div>
+            <div>🔒<b>Secure Ordering</b><small>Easy WhatsApp checkout</small></div>
+            <div>💬<b>Customer Support</b><small>We're here to help</small></div>
+        </section>
+        <section class="section" id="categories">
+            <div class="title">
+                <p>EXPLORE</p>
+                <h2>Shop by Category</h2>
+            </div>
+            <div class="cats"><button data-cat="Men">🖤<b>Men</b></button><button
+                    data-cat="Women">🌹<b>Women</b></button><button data-cat="Unisex">✨<b>Unisex</b></button><button
+                    data-cat="Oud & Arabian">🌙<b>Oud & Arabian</b></button><button
+                    data-cat="Luxury">♛<b>Luxury</b></button></div>
+        </section>
+        <section class="section shop" id="shop">
+            <div class="title">
+                <p>OUR COLLECTION</p>
+                <h2>Find Your Signature Scent</h2>
+            </div>
+            <div class="toolbar"><input id="search" placeholder="Search perfumes or notes..."><select id="filter">
+                    <option>All</option>
+                    <option>Men</option>
+                    <option>Women</option>
+                    <option>Unisex</option>
+                    <option>Oud & Arabian</option>
+                    <option>Luxury</option>
+                </select></div>
+            <div id="products" class="products"></div>
+        </section>
+        <section class="gift">
+            <p>THE PERFECT GIFT</p>
+            <h2>Elegant. Timeless. Unforgettable.</h2>
+            <p>Choose a fragrance that turns a special moment into a lasting memory.</p><a class="btn gold"
+                href="#shop">Shop Gift Scents →</a>
+        </section>
+        <section class="section about" id="about">
+            <div>
+                <p class="eyebrow">OUR STORY</p>
+                <h2>Fragrance is personal.</h2>
+                <p>RoyalScent brings together sophisticated scents for everyday confidence, gifting and memorable
+                    occasions. Explore woody, floral, fresh, amber, musk and oud profiles and find the one that feels
+                    like you.</p>
+            </div>
+            <div class="quote">“A scent can become the signature people remember.”<span>— RoyalScent</span></div>
+        </section>
+        <section class="section contact" id="contact">
+            <div class="title">
+                <p>GET IN TOUCH</p>
+                <h2>Need help choosing?</h2>
+            </div>
+            <p>Tell us the notes, occasion or budget you have in mind and we'll help you choose.</p><a
+                class="btn whatsapp"
+                href="https://wa.me/254748804805?text=Hello%20RoyalScent%2C%20I%20need%20help%20choosing%20a%20perfume."
+                target="_blank">WhatsApp Us</a>
+        </section>
+    </main>
+    <footer><a class="logo"><span>♛</span> RoyalScent<small>PREMIUM PERFUMES</small></a>
+        <p>Discover your signature scent.</p>
+        <div><a href="#shop">Shop</a> · <a href="#about">About</a> · <a href="#contact">Contact</a></div>
+        <p>📞 +254 748804805 &nbsp; ✉️ hello@royalscent.co.ke</p><small>© 2026 RoyalScent. All rights
+            reserved.</small>
+    </footer>
+    <div class="mobilebar"><a href="#home">⌂<small>Home</small></a><a href="#shop">▦<small>Shop</small></a><button
+            class="cart-open">🛍️<b class="badge">0</b><small>Cart</small></button><a
+            href="#contact">♙<small>Contact</small></a></div>
+    <div class="overlay" id="overlay"></div>
+    <aside class="cart" id="cart">
+        <div class="carthead">
+            <h2>Your Cart</h2><button id="closeCart">×</button>
+        </div>
+        <div id="cartItems"></div>
+        <div class="cartfoot">
+            <div><span>Subtotal</span><strong id="subtotal">KSh 0</strong></div><button class="btn whatsapp"
+                id="checkout">Send Order via WhatsApp</button><button class="clear" id="clearCart">Clear cart</button>
+        </div>
+    </aside>
+    <script>const PRODUCTS = [{ "id": 1, "name": "Midnight Bleu", "category": "Men", "notes": "Woody \u2022 Fresh", "price": 3500, "emoji": "\ud83c\udf0c" }, { "id": 2, "name": "Savage Noir", "category": "Men", "notes": "Fresh \u2022 Spicy", "price": 3800, "emoji": "\ud83d\udda4" }, { "id": 3, "name": "Aqua Voyage", "category": "Men", "notes": "Citrus \u2022 Marine", "price": 2900, "emoji": "\ud83c\udf0a" }, { "id": 4, "name": "Gentleman Reserve", "category": "Men", "notes": "Amber \u2022 Woody", "price": 4200, "emoji": "\ud83e\udd43" }, { "id": 5, "name": "Rose \u00c9l\u00e9gance", "category": "Women", "notes": "Floral \u2022 Rose", "price": 3200, "emoji": "\ud83c\udf39" }, { "id": 6, "name": "Velvet Bloom", "category": "Women", "notes": "Floral \u2022 Vanilla", "price": 3400, "emoji": "\ud83c\udf38" }, { "id": 7, "name": "Golden Lady", "category": "Women", "notes": "Fruity \u2022 Floral", "price": 3600, "emoji": "\u2728" }, { "id": 8, "name": "Pure Blossom", "category": "Women", "notes": "Fresh \u2022 Musk", "price": 2800, "emoji": "\ud83e\udd0d" }, { "id": 9, "name": "Amber Cloud", "category": "Unisex", "notes": "Amber \u2022 Vanilla", "price": 3900, "emoji": "\u2601\ufe0f" }, { "id": 10, "name": "Citrus Atelier", "category": "Unisex", "notes": "Citrus \u2022 Musk", "price": 3100, "emoji": "\ud83c\udf4b" }, { "id": 11, "name": "Royal Oud", "category": "Oud & Arabian", "notes": "Oud \u2022 Amber", "price": 4500, "emoji": "\ud83d\udc51" }, { "id": 12, "name": "Desert Musk", "category": "Oud & Arabian", "notes": "Musk \u2022 Woody", "price": 4000, "emoji": "\ud83c\udfdc\ufe0f" }, { "id": 13, "name": "Arabian Night", "category": "Oud & Arabian", "notes": "Oud \u2022 Spicy", "price": 4800, "emoji": "\ud83c\udf19" }, { "id": 14, "name": "Saffron Gold", "category": "Oud & Arabian", "notes": "Saffron \u2022 Amber", "price": 4600, "emoji": "\ud83d\udfe1" }, { "id": 15, "name": "Noir Priv\u00e9", "category": "Luxury", "notes": "Leather \u2022 Amber", "price": 6500, "emoji": "\ud83d\udd74\ufe0f" }, { "id": 16, "name": "Imperial Elixir", "category": "Luxury", "notes": "Woody \u2022 Vanilla", "price": 7200, "emoji": "\ud83c\udfc6" }, { "id": 17, "name": "Ocean Ember", "category": "Men", "notes": "Marine \u2022 Amber", "price": 3300, "emoji": "\ud83c\udf0a" }, { "id": 18, "name": "Pink Aura", "category": "Women", "notes": "Floral \u2022 Fruity", "price": 3000, "emoji": "\ud83d\udc97" }, { "id": 19, "name": "White Musk", "category": "Unisex", "notes": "Clean \u2022 Musk", "price": 2700, "emoji": "\ud83e\udd0d" }, { "id": 20, "name": "Oud Rose", "category": "Oud & Arabian", "notes": "Rose \u2022 Oud", "price": 4300, "emoji": "\ud83e\udd40" }];</script>
+    <script src="app.js"></script>
+</body>
+
+</html>
