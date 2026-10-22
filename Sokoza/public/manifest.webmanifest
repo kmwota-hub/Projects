@@ -1,0 +1,10 @@
+{
+  "name":"Sokoza",
+  "short_name":"Sokoza",
+  "description":"Juja's local demand and commerce platform.",
+  "start_url":"/",
+  "display":"standalone",
+  "background_color":"#F8FAFC",
+  "theme_color":"#2563EB",
+  "icons":[]
+}
