@@ -1,0 +1,3 @@
+'use client';
+import {Play,Music2,Video,Trash2} from 'lucide-react';
+export default function MediaCard({item,onPlay,onDelete}){const I=item.type==='video'?Video:Music2;return <article className="media-card"><div className={'media-icon '+item.type}><I size={24}/></div><div className="media-info"><strong>{item.title}</strong><span>{item.category} · {item.duration||'Ready'}</span></div>{onDelete&&<button className="icon-btn subtle" aria-label={'Delete '+item.title} onClick={()=>onDelete(item)}><Trash2 size={17}/></button>}<button className="icon-btn" aria-label={'Play '+item.title} onClick={()=>onPlay?.(item)}><Play size={19} fill="currentColor"/></button></article>}

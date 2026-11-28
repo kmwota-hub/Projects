@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover your next great read at Paradise Book Hub. Browse books, explore categories and order conveniently.">
+  <meta name="theme-color" content="#172b24">
+  <title>Paradise Book Hub | Find Your Next Read</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">A good book can take you anywhere. Find your next read today.</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Paradise Book Hub home">
+      <span class="brand-mark">P<span>B</span></span>
+      <span class="brand-name">PARADISE <b>BOOK HUB</b><small>READ • DISCOVER • GROW</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#books">Browse books</a><a href="#categories">Categories</a><a href="#about">About us</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" aria-label="Focus book search">⌕</button>
+      <button class="cart-button" id="open-cart">Bag <span id="cart-count">0</span></button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> YOUR NEXT CHAPTER STARTS HERE</p>
+        <h1>Stories, ideas &<br><em>new perspectives.</em></h1>
+        <p class="hero-text">From inspiring reads to timeless classics, discover books that inform, challenge and stay with you.</p>
+        <div class="hero-buttons"><a class="button button-dark" href="#books">Explore the books <span>↗</span></a><a class="text-link" href="#categories">Browse categories</a></div>
+        <div class="hero-note"><span class="note-star">✳</span><span><b>For curious minds</b><small>Books for every kind of reader</small></span></div>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="assets/book-shelves.jpg" alt="A selection of books displayed on bookstore shelves">
+        <div class="image-caption"><span>THE JOY OF READING</span><b>Find a book<br>that speaks to you.</b></div>
+        <div class="floating-seal">OPEN<br><b>A BOOK</b><br>OPEN A WORLD</div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Store highlights">
+      <div><span>✦</span><b>Thoughtfully selected reads</b></div><div><span>◈</span><b>Easy WhatsApp ordering</b></div><div><span>↗</span><b>Personal service</b></div>
+    </section>
+
+    <section class="section categories-section" id="categories">
+      <div class="section-heading"><div><p class="eyebrow">EXPLORE YOUR INTERESTS</p><h2>What would you like<br>to <em>read today?</em></h2></div><p class="section-intro">Explore a range of reading interests and find something worth turning the page for.</p></div>
+      <div class="category-grid">
+        <button class="category-card" data-category="Personal Growth"><span class="category-icon">✺</span><span><b>Personal growth</b><small>Ideas to help you grow</small></span><i>↗</i></button>
+        <button class="category-card" data-category="Business"><span class="category-icon">▤</span><span><b>Business & leadership</b><small>Think, build and lead</small></span><i>↗</i></button>
+        <button class="category-card" data-category="Fiction"><span class="category-icon">✎</span><span><b>Fiction & stories</b><small>Escape into a story</small></span><i>↗</i></button>
+        <button class="category-card" data-category="Faith"><span class="category-icon">✧</span><span><b>Faith & inspiration</b><small>Encouragement for the soul</small></span><i>↗</i></button>
+      </div>
+    </section>
+
+    <section class="section books-section" id="books">
+      <div class="section-heading books-heading"><div><p class="eyebrow">THE BOOKSHELF</p><h2>Find your next <em>favourite.</em></h2></div><span class="price-note">Most books from <b>KSh 350</b></span></div>
+      <div class="catalog-tools">
+        <label class="search-box"><span>⌕</span><input id="book-search" type="search" placeholder="Search by title, author or keyword..." aria-label="Search books"></label>
+        <select id="category-filter" aria-label="Filter by category"><option value="All">All categories</option><option>Personal Growth</option><option>Business</option><option>Fiction</option><option>Faith</option></select>
+      </div>
+      <div class="book-grid" id="book-grid"></div>
+      <p class="demo-note">Catalogue preview: titles and cover artwork are sample content for this demonstration. Confirm actual stock, prices and editions with the store before publishing.</p>
+    </section>
+
+    <section class="quote-banner">
+      <div class="quote-mark">“</div><p>A book is a gift you can open<br><em>again and again.</em></p><span>MAKE TIME FOR A GOOD READ</span>
+    </section>
+
+    <section class="about-section section" id="about">
+      <div class="about-photo"><img src="assets/book-shelves.jpg" alt="Books arranged on shelves"></div>
+      <div class="about-copy"><p class="eyebrow">WELCOME TO PARADISE BOOK HUB</p><h2>More than pages.<br><em>A world of possibility.</em></h2><p>We believe the right book can spark an idea, offer a fresh perspective or inspire your next step. Explore the collection and let us help you find a read you'll love.</p><a class="button button-outline" href="#books">Discover the collection <span>↗</span></a></div>
+    </section>
+
+    <section class="closing-cta"><div><p class="eyebrow">NEED HELP FINDING A BOOK?</p><h2>Let's find your<br><em>next great read.</em></h2></div><a class="button button-light" id="contact-whatsapp" href="#">Chat with us on WhatsApp <span>↗</span></a></section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">P<span>B</span></span><span class="brand-name">PARADISE <b>BOOK HUB</b><small>READ • DISCOVER • GROW</small></span></a><p>Find a little inspiration on every shelf.</p><div class="footer-bottom"><span>© <span id="year"></span> Paradise Book Hub</span><span>Made for readers, by readers.</span><a href="#home">Back to top ↑</a></div></footer>
+
+  <div class="cart-overlay" id="cart-overlay" aria-hidden="true">
+    <div class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <div class="cart-head"><div><p class="eyebrow">YOUR SELECTION</p><h2 id="cart-title">Your book bag</h2></div><button id="close-cart" class="close-button" aria-label="Close cart">×</button></div>
+      <div id="cart-items" class="cart-items"><p class="empty-cart">Your bag is waiting for a good book.</p></div>
+      <div class="cart-foot"><div class="total-row"><span>Estimated total</span><b id="cart-total">KSh 0</b></div><p>Final availability and delivery details will be confirmed by the store.</p><button class="button button-dark full-button" id="checkout">Order via WhatsApp ↗</button></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

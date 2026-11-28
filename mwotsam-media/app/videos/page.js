@@ -1,0 +1,1 @@
+'use client';import Shell from '../../components/Shell';import MediaList from '../../components/MediaList';export default function Videos(){return <Shell title="Videos"><MediaList type="video" allowDelete/></Shell>}

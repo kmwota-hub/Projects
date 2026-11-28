@@ -1,0 +1,1 @@
+'use client';import Shell from '../../components/Shell';import MediaList from '../../components/MediaList';export default function Audio(){return <Shell title="Audio"><MediaList type="audio" allowDelete/></Shell>}
