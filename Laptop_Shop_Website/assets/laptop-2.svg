@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440">
+<defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#eee3d5"/><stop offset="1" stop-color="#fafaf7"/></linearGradient><linearGradient id="s"><stop stop-color="#554536"/><stop offset="1" stop-color="#9bb7b1"/></linearGradient></defs>
+<rect width="640" height="440" rx="20" fill="url(#b)"/><circle cx="520" cy="80" r="75" fill="#fff" opacity=".35"/>
+<ellipse cx="320" cy="365" rx="210" ry="22" fill="#253746" opacity=".12"/>
+<g transform="translate(95 65)"><rect x="65" y="15" width="320" height="235" rx="13" fill="#273743"/><rect x="78" y="28" width="294" height="209" rx="5" fill="url(#s)"/><path d="M78 190 Q170 90 245 150 T372 85 V237 H78Z" fill="#554536" opacity=".65"/><path d="M20 252 H430 L463 282 Q465 290 448 292 H0 Q-14 290 -10 282Z" fill="#c1c9c8"/><path d="M-10 282 H463 Q465 290 448 292 H0Q-14 290 -10 282Z" fill="#66747a"/><rect x="190" y="258" width="90" height="4" rx="2" fill="#78868a"/></g>
+<text x="320" y="415" text-anchor="middle" font-family="Arial" font-size="14" letter-spacing="4" fill="#596c70">LAPTOP COLLECTION</text></svg>
